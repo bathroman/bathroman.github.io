@@ -1,8 +1,19 @@
 <html>
 <head>
   <title>This is my pages.</title>
+  <script src="js/jquery-3.1.1.min.js"></script>
+
 </head>
 <body>
   <h1>Hello, world!</h1>
+  <h1 id="west_a_43" class="location_name">西あ-43</h1>
+  <img id="image" src="img/test.jpg" style="visibility:hidden"/>
 </body>
+<script>
+  $('#west_a_43').mouseover(function(){
+    $('#image').css('visibility','initial');
+  }).mouseout(function(){
+		$('#image').css('visibility','hidden');
+  });
+</script>
 </html>
